@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Lumiidev</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">Lumiidev</span>
+                </a>
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Get In <span class="gradient-text">Touch</span></h1>
+            <p class="page-subtitle">Let's discuss how we can help bring your vision to life</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Let's Start a Conversation</h2>
+                    <p class="contact-intro">
+                        Whether you have a project in mind, need technical consultation, or just want to 
+                        learn more about our services, we're here to help. Reach out and let's explore 
+                        how we can work together.
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div class="method-details">
+                                <h4>Email Us</h4>
+                                <a href="mailto:admin@lumiidev.com">admin@lumiidev.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">📱</div>
+                            <div class="method-details">
+                                <h4>Call Us</h4>
+                                <a href="tel:+1234567890">+61431 791 794</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">📍</div>
+                            <div class="method-details">
+                                <h4>Location</h4>
+                                <p>Sydney, NSW<br>Australia</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">⏰</div>
+                            <div class="method-details">
+                                <h4>Business Hours</h4>
+                                <p>Monday - Friday<br>9:00 AM - 6:00 PM AEST</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-cta">
+                        <h3>What to Expect</h3>
+                        <ul class="expectations-list">
+                            <li>✓ Response within 24 hours</li>
+                            <li>✓ Free initial consultation</li>
+                            <li>✓ Detailed project proposal</li>
+                            <li>✓ Transparent pricing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="john@company.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company" placeholder="Your Company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="ai">AI & Machine Learning</option>
+                                <option value="web">Web Development</option>
+                                <option value="data">Data Engineering</option>
+                                <option value="consulting">Technical Consulting</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">Project Budget</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="small">$10k - $25k</option>
+                                <option value="medium">$25k - $50k</option>
+                                <option value="large">$50k - $100k</option>
+                                <option value="enterprise">$100k+</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Project Details *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project, goals, and timeline..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            Send Message
+                        </button>
+                        
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How long does a typical project take?</h3>
+                    <p>
+                        Project timelines vary based on scope and complexity. Small projects may take 4-6 weeks, 
+                        while larger enterprise solutions can take 3-6 months. We'll provide a detailed timeline 
+                        during the consultation phase.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you work with startups?</h3>
+                    <p>
+                        Absolutely! We love working with startups and understand the unique challenges they face. 
+                        We offer flexible engagement models and can scale our services as your business grows.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>What industries do you serve?</h3>
+                    <p>
+                        We work across various industries including fintech, healthcare, e-commerce, SaaS, 
+                        and more. Our technology expertise translates well across different sectors.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you provide ongoing support?</h3>
+                    <p>
+                        Yes! We offer maintenance and support packages to ensure your solution continues to 
+                        perform optimally. We're committed to long-term partnerships with our clients.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can you work with our existing team?</h3>
+                    <p>
+                        Definitely! We can augment your existing team, provide technical leadership, or work 
+                        as an independent development partner—whatever works best for your organization.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>What's your development process?</h3>
+                    <p>
+                        We follow agile methodologies with regular sprints, demos, and feedback cycles. This 
+                        ensures transparency, adaptability, and that the final product meets your expectations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">
+                        <span class="logo-icon">⚡</span>
+                        Lumiidev
+                    </h3>
+                    <p class="footer-description">
+                        Illuminating the path to digital excellence through AI, Web, and Data innovation.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#ai">AI Solutions</a></li>
+                        <li><a href="services.html#web">Web Development</a></li>
+                        <li><a href="services.html#data">Data Engineering</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:admin@lumiidev.com">admin@lumiidev.com</a></li>
+                        <li><a href="tel:+1234567890">+61431 791 794</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lumiidev. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
