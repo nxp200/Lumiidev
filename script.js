@@ -1,22 +1,4 @@
-// Mobile Menu Toggle
-const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-const navMenu = document.getElementById('navMenu');
-
-if (mobileMenuBtn && navMenu) {
-    mobileMenuBtn.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        mobileMenuBtn.classList.toggle('active');
-    });
-
-    // Close menu when clicking on a link
-    const navLinks = navMenu.querySelectorAll('.nav-link');
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
-            mobileMenuBtn.classList.remove('active');
-        });
-    });
-}
+// Mobile menu is now handled in nav.js
 
 // Navbar Scroll Effect
 const navbar = document.querySelector('.navbar');
@@ -223,15 +205,7 @@ techTags.forEach(tag => {
     });
 });
 
-// Add active state to navigation based on current page
-const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-const navLinks = document.querySelectorAll('.nav-link');
-navLinks.forEach(link => {
-    const href = link.getAttribute('href');
-    if (href === currentPage) {
-        link.classList.add('active');
-    }
-});
+// Active state is now handled in nav.js
 
 // Add cursor trail effect (optional, subtle)
 let mouseX = 0;
